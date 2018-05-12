@@ -1,5 +1,5 @@
 ---
-title: "Youtuber Subscriber vs Populations in the World"
+title: "Youtuber Subscriber vs Populations Around the World"
 output: html_document
 ---
 
