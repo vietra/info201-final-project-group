@@ -1,5 +1,5 @@
 ---
-title: "Youtuber Subscriber vs Populations Around the World"
+title: "Youtube Channel vs Populations Around the World"
 output: html_document
 ---
 
@@ -11,7 +11,7 @@ source("analysis.R")
 `r paste0("###", username_id)` 
 `r description`
 
-`r username_id`'s subscriber count is: `r subscriber_count`
+`r username_id`'s subscriber count is: `r subscriber_count_formatted`
 ```{r, echo=FALSE}
 p
 ```

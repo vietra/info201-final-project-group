@@ -5,7 +5,7 @@ library(stringr)
 source("api-key.R")
 
 
-username <- "buzzfeedvideo"
+username <- "pewdiepie"
 base_url <- "https://www.googleapis.com/youtube/v3/"
 resource <- "channels?part=snippet&forUsername="
 getid_uri <- paste0(base_url, resource, username,"&key=", google_key)
@@ -24,3 +24,4 @@ youtuber_content <- content(youtuber, "text")
 youtuber_body <- fromJSON(youtuber_content)
 youtuber_df <- flatten(youtuber_body$items$statistics)
 subscriber_count <- as.numeric(youtuber_df$subscriberCount)
+subscriber_count_formatted <- format(as.numeric(youtuber_df$subscriberCount), big.mark=",")

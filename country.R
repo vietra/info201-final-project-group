@@ -27,7 +27,7 @@ g <- list(
 p <- plot_geo(temp) %>%
     add_trace(
       z = ~new, color = ~new, colors = 'Blues',
-      text = ~paste(name, "<br>", population), 
+      text = ~paste(name, "<br>", format(temp$population, big.mark=",")), 
                     locations = ~alpha3Code, marker = list(line = l),
       showscale = FALSE
     ) %>%
