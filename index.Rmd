@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Youtuber Subscriber vs Populations in the World"
 output: html_document
 ---
 
@@ -8,7 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 source("country.R")
 source("analysis.R")
 ```
-
+`r paste0("###", username_id)` 
+`r description`
 `r username_id`'s subscriber count is: `r subscriber_count`
 ```{r, echo=FALSE}
 p
