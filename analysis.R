@@ -24,5 +24,3 @@ youtuber_content <- content(youtuber, "text")
 youtuber_body <- fromJSON(youtuber_content)
 youtuber_df <- flatten(youtuber_body$items$statistics)
 subscriber_count <- as.numeric(youtuber_df$subscriberCount)
-
-hi

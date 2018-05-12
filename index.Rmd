@@ -10,6 +10,7 @@ source("analysis.R")
 ```
 `r paste0("###", username_id)` 
 `r description`
+
 `r username_id`'s subscriber count is: `r subscriber_count`
 ```{r, echo=FALSE}
 p
