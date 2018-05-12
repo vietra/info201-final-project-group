@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 source("api-key.R")
 
-username <- "thealvintran"
+username <- "buzzfeedvideo"
 base_url <- "https://www.googleapis.com/youtube/v3/"
 resource <- "channels?part=snippet&forUsername="
 getid_uri <- paste0(base_url, resource, username,"&key=", google_key)
