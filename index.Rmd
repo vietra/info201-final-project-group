@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("country.R")
+source("analysis.R")
+```
+
+`r username_id`'s subscriber count is: `r subscriber_count`
+```{r, echo=FALSE}
+p
+```
+
