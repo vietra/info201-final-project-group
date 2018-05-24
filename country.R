@@ -17,6 +17,8 @@ temp[temp$population > subscriber_count , "new"] <- 1
 temp[temp$population < subscriber_count , "new"] <- 0
 l <- list(color = toRGB("grey"), width = 0.5)
 
+less <- nrow(temp %>% filter(new == 0))
+
 # specify map projection/options
 g <- list(
   showframe = FALSE,

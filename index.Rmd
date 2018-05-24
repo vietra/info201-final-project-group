@@ -9,10 +9,12 @@ source("country.R")
 source("analysis.R")
 ```
 `r paste0("###", username_id)` 
-`r description`
+Channel description: `r description`
 
 `r username_id`'s subscriber count is: `r subscriber_count_formatted`
 ```{r, echo=FALSE}
 p
 ```
+Highlighted countries are those with population larger than the subscriber count of the channel.
 
+`r username_id` has more subscribers than the population of `r less` countries
